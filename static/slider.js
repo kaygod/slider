@@ -185,6 +185,7 @@ Slider.prototype.bindleftAnimate = function (el) {
   let t = 0;
 
   function updateDom() {
+    //模拟抛物线方程 y = ax^2 + bx
     el.style.left = -1*(a*t*t + b*t) +"px";
     setTimeout(() => {
       t += 20;
